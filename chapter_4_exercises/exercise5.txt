@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+    float flotante = 1.0;
+    int entero = 1;
+    char caracter = 'A';
+
+    printf("%d", flotante);
+    printf("%f", entero);
+    printf("%d", caracter);
+
+}

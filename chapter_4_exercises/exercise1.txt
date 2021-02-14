@@ -1,0 +1,7 @@
+#include <stdio.h>
+
+int main(void){
+    printf(" Hi! my name is Noé Lozano Mendoza\n my social security number is: 387349273492\n My birthday is the 02/15/2002");
+  
+    return 0;
+}
