@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main(void) {
+  float C;
+  printf("Introduce the temperature in Celsius for converting it to Farenheit: ");
+  scanf("%f", &C );
+  float F = C * 9/5 + 32;
+  printf("%f° Celsius are %f° Farenheit", C , F);
+  return 0;
+}

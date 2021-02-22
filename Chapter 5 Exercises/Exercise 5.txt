@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+  int hour, minute, final_mins;
+  printf("Lets convert hours/minutes to only minutes\n");
+  printf("Introduce the hours: ");
+  scanf("%d", &hour);
+  printf("Introduce minutes: ");
+  scanf("%d", &minute);
+
+  final_mins = (hour * 60) + minute;
+
+  printf("In %d hours and %d minutes there are %d minutes", hour, minute, final_mins); 
+
+  return 0;
+}

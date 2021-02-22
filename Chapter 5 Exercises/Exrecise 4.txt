@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+  float km, mi;
+  printf("Introduce km/h to convert them to mi/h:");
+  scanf("%f", &km);
+  mi = km * 0.6213712;
+  printf("%f km/h are %f mi/h", km, mi);
+  return 0;
+}
