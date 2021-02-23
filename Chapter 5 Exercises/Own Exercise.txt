@@ -3,12 +3,12 @@
 //Find the biggest number in an array
 
 int main(void) {
-    int arraySize, maxNum = 0;
-    printf("Find the biggest number in an array.\n\n");
-    printf("Size of the array: ");
-    scanf("%i", &arraySize);
 
     int values[arraySize];
+    int arraySize, maxNum = 0;
+    printf("Find the biggest number in an array.\n");
+    printf("Size of the array: ");
+    scanf("%i", &arraySize);
 
     for(int n=0; n<arraySize; n++){
         printf("Value[%i]: ",n+1);
