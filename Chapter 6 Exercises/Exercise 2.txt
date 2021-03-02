@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(void){
+  int studgrade;
+
+  printf("Introduce the grade number of the student to obtain the grade letter: ");
+  scanf("%i", &studgrade);
+
+  if (studgrade <= 60) 
+    {printf("The student got an F");}
+
+  else if (studgrade <= 70 && studgrade >= 61) 
+    {printf("The student got a D");}
+
+  else if (studgrade <= 80 && studgrade >= 71) 
+    {printf("The student got a C");}
+
+  else if (studgrade <= 90 && studgrade >= 81) 
+    {printf("The student got a B");}
+
+  else if (studgrade <= 100 && studgrade >= 91) 
+    {printf("The student got an A");}
+
+  else 
+    {printf("Out of range");}
+    
+  return 0;
+}

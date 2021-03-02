@@ -1,0 +1,64 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(void){
+  int studgrade,grademod;
+  printf("Introduce the grade number of the student to obtain the grade letter: ");
+  scanf("%i", &studgrade);
+
+  grademod = studgrade % 10;
+
+  if (studgrade <= 60)
+        {printf("The student got an F");}
+        
+  else if (studgrade <= 70 && studgrade >= 61) 
+    {
+      if (grademod <= 3 && grademod >= 1)
+        {printf("The student got an D-");}
+      else if (grademod <= 7 && grademod >= 4)
+        {printf("The student got an D");}
+      else if ((grademod >= 8 && grademod <= 9) || grademod == 0 )
+        {printf("The student got an D+");}
+      else
+        {printf("Not valid");}
+    }
+  else if (studgrade <= 80 && studgrade >= 71) 
+    {
+      if (grademod <= 3 && grademod >= 1)
+        {printf("The student got an C-");}
+      else if (grademod <= 7 && grademod >= 4)
+        {printf("The student got an C");}
+      else if ((grademod >= 8 && grademod <= 9) || grademod == 0 )
+        {printf("The student got an C+");}
+      else
+        {printf("Not valid");}
+    }
+  else if (studgrade <= 90 && studgrade >= 81) 
+    {
+      if (grademod <= 3 && grademod >= 1)
+        {printf("The student got an B-");}
+      else if (grademod <= 7 && grademod >= 4)
+        {printf("The student got an B");}
+      else if ((grademod >= 8 && grademod <= 9) || grademod == 0 )
+        {printf("The student got an B+");}
+      else
+        {printf("Not valid");}
+    }
+  else if (studgrade <= 100 && studgrade >= 91) 
+    {
+      if (grademod <= 3 && grademod >= 1)
+        {printf("The student got an A-");}
+      else if (grademod <= 7 && grademod >= 4)
+        {printf("The student got an A");}
+      else if ((grademod >= 8 && grademod <= 9) || grademod == 0 )
+        {printf("The student got an A+");}
+      else
+        {printf("Not valid");}
+    }
+  else 
+    {
+      printf("Out of range");
+    }
+
+  return 0;
+}

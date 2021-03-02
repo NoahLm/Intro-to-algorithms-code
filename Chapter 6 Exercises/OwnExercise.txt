@@ -1,0 +1,27 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(void){
+  int usernumber;
+
+  printf("Introduce the number of the taco you want.\n1.-Suadero, 2.-Steak, 3.- Pastor\n");
+  printf("Introduce a number: ");
+  scanf("%d", &usernumber);
+
+  switch (usernumber)
+  {
+    case 1:
+      printf("You selected Suadero tacos. (My favorites.)");
+      break;
+    case 2:
+      printf("You selected Steak tacos. (With green sauce they are delicious.)");
+      break;
+    case 3:
+      printf("You selected tacos al pastor. (Good election)");
+      break;
+    default:
+      printf("Choose a correct number");
+      break;
+  }
+  return 0;
+}

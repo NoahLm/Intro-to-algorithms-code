@@ -1,0 +1,30 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(void){
+  float salary, hours;
+
+  printf("Introduce your salary and hours worked for obtaining the total\npayment.\n");
+  printf("Introduce your salary per hour:");
+  scanf("%f",&salary);
+  printf("Introduce the hours you worked this week:");
+  scanf("%f",&hours);
+
+  float newhours,total;
+  float mult = 1.5;
+  float subhours;
+
+  
+	if (hours <= 40) {
+		total = hours * salary;
+	}
+	else {
+		newhours = hours - 40;
+		total = 40 * salary;
+		total += newhours * (salary + (salary/2));
+	}
+
+  printf("The weekly pay is: $%f\n", total);
+
+  return 0;
+}

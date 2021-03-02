@@ -1,0 +1,25 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(void){
+  float usermoney;
+  int leftquarter, leftdimes, leftnickels, quarters, dimes, nickels;
+
+  printf("Introduce an amount of money less than 1.00$ and see how many quarters, dimes, nickels and pennies are equivalent: ");
+  scanf("%f", &usermoney);
+
+  int incrsdmoney = usermoney * 100;
+  
+  quarters = incrsdmoney / 25;
+  leftquarter = incrsdmoney % 25;
+  
+  dimes = leftquarter / 10;
+  leftdimes = leftquarter % 10;
+  
+  nickels = leftdimes / 5;
+  leftnickels = leftdimes % 5;
+  
+  printf("In %f$ there are %d quarters, %d dimes, %d nickels and %d pennies", usermoney, quarters, dimes, nickels, leftnickels);
+
+  return 0;
+}

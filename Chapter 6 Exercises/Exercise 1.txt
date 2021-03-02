@@ -1,0 +1,26 @@
+#include<stdio.h>
+#include<math.h>
+
+int main(void){
+  float x1 , x2, y1, y2, subx, suby, sumxy, result;
+  printf("Introduce 2 coordinates for obtaining the distance beetween two points\n");
+  
+  printf("Introduce x of the first coordinate: ");
+  scanf("%f", &x1);
+  printf("Introduce y of the first coordinate: ");
+  scanf("%f", &y1);
+  printf("Introduce x of the second coordinate: ");
+  scanf("%f", &x2);
+  printf("Introduce y of the second coordinate: ");
+  scanf("%f", &y2);
+
+  subx = x2 - x1;
+  suby = y2 - y1;
+
+  sumxy = pow(subx , 2) + pow(suby,2); 
+  result = sqrt(sumxy);
+
+  printf("The distance beetween to points is: %f", result);
+
+  return 0;
+}
